@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="E:\PROJECTS\MobTrack\Mobtrack-Relay\modules\sms-gateway\android"
+    name=":sms-gateway"
+    type="LIBRARY"
+    maven="expo.modules.smsgateway:sms-gateway:1.0.0"
+    agpVersion="8.12.0"
+    buildFolder="build"
+    bootClassPath="C:\Users\punit\AppData\Local\Android\Sdk\platforms\android-36\android.jar;C:\Users\punit\AppData\Local\Android\Sdk\build-tools\35.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-36"
+    neverShrinking="true">
+  <lintOptions
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

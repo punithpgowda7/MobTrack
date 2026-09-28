@@ -1,0 +1,7 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true
+  },
+  "exclude": ["app", "app/**/*", "next.config.ts", "App_backup.tsx"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "background-audio",
+  "version": "1.0.0",
+  "description": "Background audio recording native module for MobTrack",
+  "main": "index.ts",
+  "private": true
+}

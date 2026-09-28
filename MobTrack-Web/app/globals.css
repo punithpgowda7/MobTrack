@@ -1,0 +1,232 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #070a10;
+  --foreground: #f8fafc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  background-color: #070a10;
+  color: #f8fafc;
+  font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Cyber Atmospheric Background & Grid (Permanent Tactical Dark) ───── */
+.cyber-bg {
+  background-color: #070a10;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.08), transparent 50%),
+    radial-gradient(circle at 10% 40%, rgba(52, 211, 153, 0.04), transparent 45%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+}
+
+/* ── Tactical Cockpit Panels ───────────────────────────────────────────── */
+.cyber-panel {
+  background: rgba(11, 16, 26, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(16, 185, 129, 0.22);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.9),
+              0 0 20px -5px rgba(16, 185, 129, 0.06),
+              inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+/* ── Tactical HUD Corner Accents ────────────────────────────────────────── */
+.bracket-box {
+  position: relative;
+}
+.bracket-box::before,
+.bracket-box::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+  z-index: 20;
+}
+.bracket-box::before {
+  top: 0;
+  left: 0;
+  border-top: 2px solid #10b981;
+  border-left: 2px solid #10b981;
+}
+.bracket-box::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid #10b981;
+  border-right: 2px solid #10b981;
+}
+
+.bracket-box-rose {
+  position: relative;
+}
+.bracket-box-rose::before,
+.bracket-box-rose::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+  z-index: 20;
+}
+.bracket-box-rose::before {
+  top: 0;
+  left: 0;
+  border-top: 2px solid #f43f5e;
+  border-left: 2px solid #f43f5e;
+}
+.bracket-box-rose::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid #f43f5e;
+  border-right: 2px solid #f43f5e;
+}
+
+/* ── HUD CRT Scanlines ─────────────────────────────────────────────────── */
+.hud-scanlines {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(16, 185, 129, 0.02) 50%),
+              linear-gradient(90deg, rgba(255, 0, 0, 0.01), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.01));
+  background-size: 100% 3px, 6px 100%;
+}
+
+/* ── Custom Sleek Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070a10;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* ── Tactical Interactive Buttons ──────────────────────────────────────── */
+.cyber-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cyber-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+  transition: 0.5s;
+  pointer-events: none;
+}
+.cyber-btn:hover::after {
+  left: 100%;
+}
+
+/* Emerald Primary Action */
+.cyber-btn-emerald {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(11, 16, 26, 0.95));
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  box-shadow: 0 0 14px -3px rgba(16, 185, 129, 0.18), inset 0 0 12px rgba(16, 185, 129, 0.04);
+}
+.cyber-btn-emerald:hover {
+  border-color: rgba(16, 185, 129, 0.85);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Titanium Slate Secondary Action */
+.cyber-btn-slate {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+}
+.cyber-btn-slate:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(16, 185, 129, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Alert Rose (Live Camera / Police Report ONLY) */
+.cyber-btn-rose {
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.14), rgba(11, 16, 26, 0.95));
+  border: 1px solid rgba(244, 63, 94, 0.45);
+  box-shadow: 0 0 16px -3px rgba(244, 63, 94, 0.25), inset 0 0 12px rgba(244, 63, 94, 0.06);
+}
+.cyber-btn-rose:hover {
+  border-color: rgba(244, 63, 94, 0.9);
+  box-shadow: 0 0 25px rgba(244, 63, 94, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Caution Amber (Offline SMS Relay) */
+.cyber-btn-amber {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(11, 16, 26, 0.95));
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  box-shadow: 0 0 14px -3px rgba(245, 158, 11, 0.15), inset 0 0 12px rgba(245, 158, 11, 0.04);
+}
+.cyber-btn-amber:hover {
+  border-color: rgba(245, 158, 11, 0.8);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Backward-compatible alias for legacy calls */
+.cyber-btn-cyan {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(11, 16, 26, 0.95));
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+/* ── Glow Beacons ──────────────────────────────────────────────────────── */
+@keyframes pulse-rose {
+  0%, 100% { opacity: 1; box-shadow: 0 0 14px rgba(244, 63, 94, 0.6); }
+  50% { opacity: 0.5; box-shadow: 0 0 4px rgba(244, 63, 94, 0.2); }
+}
+.pulse-glow-rose {
+  animation: pulse-rose 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes radar-sweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.radar-sweep-anim {
+  animation: radar-sweep 4s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+/* ── Leaflet Polish (Dark Tactical HUD) ────────────────────────────────── */
+.leaflet-container {
+  background-color: #070a10 !important;
+  font-family: inherit !important;
+}
+.leaflet-popup-content-wrapper {
+  background: rgba(11, 16, 26, 0.95) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+  backdrop-filter: blur(12px) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7) !important;
+}
+.leaflet-popup-tip {
+  background: rgba(11, 16, 26, 0.95) !important;
+}
+
+

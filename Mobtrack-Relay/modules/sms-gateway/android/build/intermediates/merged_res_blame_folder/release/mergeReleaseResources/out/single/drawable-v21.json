@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "expo.modules.smsgateway.sms-gateway-release-7:/drawable-v21/notification_action_background.xml",
+        "source": "expo.modules.smsgateway.sms-gateway-core-1.12.0-2:/drawable-v21/notification_action_background.xml"
+    }
+]

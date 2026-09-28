@@ -1,0 +1,20 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'expo.modules.backgroundaudio'
+version = '1.0.0'
+
+android {
+    namespace "expo.modules.backgroundaudio"
+    defaultConfig {
+        minSdk 24
+        versionCode 1
+        versionName "1.0.0"
+    }
+}
+
+dependencies {
+    // AudioRecord is built into Android SDK — no extra libraries needed
+}

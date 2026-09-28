@@ -1,0 +1,7 @@
+{
+  "platforms": ["android"],
+  "name": "offline-gps",
+  "android": {
+    "modules": ["expo.modules.offlinegps.OfflineGpsModule"]
+  }
+}

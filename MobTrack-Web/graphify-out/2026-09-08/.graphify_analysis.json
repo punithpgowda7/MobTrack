@@ -1,0 +1,253 @@
+{
+  "communities": {
+    "0": [
+      "jspdf",
+      "jszip",
+      "next",
+      "package_dependencies",
+      "package_dependencies_jspdf",
+      "package_dependencies_jszip",
+      "package_dependencies_leaflet",
+      "package_dependencies_next",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_supabase_supabase_js",
+      "package_dependencies_types_jszip",
+      "package_dependencies_types_leaflet",
+      "package_json_leaflet",
+      "react",
+      "react_dom",
+      "supabase_supabase_js",
+      "types_jszip",
+      "types_leaflet"
+    ],
+    "1": [
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_esnext",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target"
+    ],
+    "2": [
+      "app_track_mapview",
+      "app_track_mapview_mapview",
+      "app_track_mapview_mapviewprops",
+      "app_track_mapview_orderpathhistory",
+      "app_track_mapview_path_gap_break_ms",
+      "app_track_mapview_pathpoint",
+      "app_track_mapview_splitpathsegments",
+      "app_track_page",
+      "app_track_page_audiobroadcastmessage",
+      "app_track_page_devicedata",
+      "app_track_page_formatduration",
+      "app_track_page_getphotourl",
+      "app_track_page_mapview",
+      "app_track_page_track",
+      "app_track_page_trackinner",
+      "app_track_page_videobroadcastmessage",
+      "leaflet"
+    ],
+    "3": [
+      "eslint",
+      "eslint_config_next",
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_config_next",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_postcss",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "tailwindcss",
+      "tailwindcss_postcss",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "typescript"
+    ],
+    "4": [
+      "app_dashboard_page",
+      "app_dashboard_page_button_labels",
+      "app_dashboard_page_buttontoken",
+      "app_dashboard_page_dashboard",
+      "app_dashboard_page_getphotourl",
+      "app_photos_page",
+      "app_photos_page_formatdate",
+      "app_photos_page_getfilename",
+      "app_photos_page_getpublicurl",
+      "app_photos_page_photocapture",
+      "app_photos_page_photogallery",
+      "app_photos_page_photothumbnail",
+      "app_photos_page_thumbprops",
+      "lib_supabase",
+      "lib_supabase_supabase"
+    ],
+    "5": [
+      "ref_mts",
+      "ref_next_dev_types_ts",
+      "ref_next_env_d_ts",
+      "ref_next_types_ts",
+      "ref_node_modules",
+      "ref_ts",
+      "ref_tsx",
+      "tsconfig",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "6": [
+      "package",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_version"
+    ],
+    "7": [
+      "app_layout",
+      "app_layout_geistmono",
+      "app_layout_geistsans",
+      "app_layout_metadata",
+      "app_layout_rootlayout"
+    ],
+    "8": [
+      "app_api_photo_delete_route",
+      "app_api_photo_delete_route_delete",
+      "app_api_photo_delete_route_supabase"
+    ],
+    "9": [
+      "app_api_photo_route",
+      "app_api_photo_route_get",
+      "app_api_photo_route_supabase"
+    ],
+    "10": [
+      "app_page",
+      "app_page_home"
+    ],
+    "11": [
+      "eslint_config",
+      "eslint_config_eslintconfig"
+    ],
+    "12": [
+      "next_config",
+      "next_config_nextconfig"
+    ],
+    "13": [
+      "postcss_config",
+      "postcss_config_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10526315789473684,
+    "1": 0.10526315789473684,
+    "2": 0.19852941176470587,
+    "3": 0.11764705882352941,
+    "4": 0.2,
+    "5": 0.2,
+    "6": 0.2222222222222222,
+    "7": 0.4,
+    "8": 0.6666666666666666,
+    "9": 0.6666666666666666,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "tsconfig_include",
+      "label": "include",
+      "degree": 7
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "app_track_page_trackinner",
+      "label": "TrackInner()",
+      "degree": 5
+    },
+    {
+      "id": "app_photos_page_photogallery",
+      "label": "PhotoGallery()",
+      "degree": 4
+    },
+    {
+      "id": "tsconfig_compileroptions_lib",
+      "label": "lib",
+      "degree": 4
+    },
+    {
+      "id": "lib_supabase_supabase",
+      "label": "supabase",
+      "degree": 4
+    },
+    {
+      "id": "app_track_mapview_orderpathhistory",
+      "label": "orderPathHistory()",
+      "degree": 4
+    },
+    {
+      "id": "app_track_mapview_splitpathsegments",
+      "label": "splitPathSegments()",
+      "degree": 4
+    },
+    {
+      "id": "app_photos_page_formatdate",
+      "label": "formatDate()",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "TrackInner()",
+      "target": "orderPathHistory()",
+      "source_files": [
+        "app/track/page.tsx",
+        "app/track/MapView.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "TrackInner()",
+      "target": "splitPathSegments()",
+      "source_files": [
+        "app/track/page.tsx",
+        "app/track/MapView.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

@@ -1,0 +1,53 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Expo & React Native
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Next.js / Build outputs
+.next/
+out/
+build/
+**/build/
+
+# Android & Gradle Build Artifacts
+.gradle/
+**/.gradle/
+.cxx/
+**/.cxx/
+local.properties
+*.apk
+*.aab
+
+# IDE & OS
+.idea/
+*.iml
+.DS_Store
+*.pem
+
+# Native & Metro
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.metro-health-check*
+
+# Logs & Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.gz
+*.txt
+
+# Analysis & Local tools
+graphify-out/
+.android-sdk/
+.build-tools/

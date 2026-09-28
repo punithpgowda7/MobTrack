@@ -1,0 +1,38 @@
+{
+  "name": "mobtrackapp-clean",
+  "version": "1.0.30",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "publish-update": "node scripts/publish-update.js",
+    "postinstall": "node postinstall.js"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@supabase/supabase-js": "^2.112.3",
+    "apk-updater": "file:./modules/apk-updater",
+    "background-audio": "file:./modules/background-audio",
+    "background-camera": "file:./modules/background-camera",
+    "fake-shutdown": "file:./modules/fake-shutdown",
+    "offline-gps": "file:./modules/offline-gps",
+    "sms-gateway": "file:./modules/sms-gateway",
+    "base64-arraybuffer": "^1.0.2",
+    "expo": "~54.0.35",
+    "expo-build-properties": "~1.0.10",
+    "expo-camera": "~17.0.10",
+    "expo-location": "~19.0.8",
+    "expo-status-bar": "~3.0.9",
+    "expo-task-manager": "~14.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-url-polyfill": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}
