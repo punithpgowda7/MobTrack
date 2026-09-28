@@ -147,21 +147,6 @@ The signed release APK is located at:
 5. Verify the green channel status indicator displays **`SUBSCRIBED`**.
 6. Keep the Relay App running in the background—it will now automatically bridge web requests to offline devices!
 
----
-
-## 📁 Repository Structure
-
-```text
-E:\PROJECTS\MobTrack\
-├── FINAL_APKS/                      # Production signed APKs for evaluation
-│   ├── MobTrack-App-v1.0.30-release.apk
-│   └── MobTrack-Relay-release.apk
-├── MobTrack-App/                    # Main Android application (React Native + Kotlin Native)
-├── MobTrack-Web/                    # Web tracking portal (Next.js 16 + Supabase + Tailwind + Leaflet)
-├── Mobtrack-Relay/                  # Standalone SMS Relay Gateway App
-├── SIH_FINAL.pdf                    # Official SIH Presentation Deck
-└── README.md                        # Master Documentation
-```
 
 ---
 
