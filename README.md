@@ -91,27 +91,9 @@ To ensure un-killable background operation and anti-tamper protection, grant the
 
 ## 🌐 2. Web Management Portal Setup (`MobTrack-Web`)
 
-### 📋 Prerequisites
-* **Node.js:** v18.0.0 or higher
-* **npm:** v9.0.0 or higher
-* **Git**
-
-### 🚀 Local Installation & Execution
-```bash
-# 1. Navigate to the web project folder
-cd MobTrack-Web
-
-# 2. Install dependencies
-npm install
-
-# 3. Start the Next.js development server
-npm run dev
-```
-
-The portal will start running locally at **`http://localhost:3000`** (or `http://localhost:3001`).
-
+Visit the deployed link->https://mobtrackweb.vercel.app/track
 ### 💻 Entering the Portal & Features
-1. Open `http://localhost:3000` in any desktop or mobile browser.
+1. Open `https://mobtrackweb.vercel.app/track` in any desktop or mobile browser.
 2. **Login Options:**
    * **Owner Login:** Enter registered Email & Password.
    * **Emergency Backup Code:** Use your pre-generated offline recovery code.
